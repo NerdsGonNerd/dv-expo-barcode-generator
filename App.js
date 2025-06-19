@@ -194,6 +194,7 @@ export default function App() {
             >
               <View style={[styles.checkbox, displayValue && styles.checkboxChecked]}>
                 {displayValue && <Text style={styles.checkmark}>✓</Text>}
+                }
               </View>
               <Text style={styles.toggleText}>Display Value Below Barcode</Text>
             </TouchableOpacity>
