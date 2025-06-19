@@ -7,8 +7,7 @@ import {
   Inter_700Bold
 } from '@expo-google-fonts/inter';
 import * as SplashScreen from 'expo-splash-screen';
-import { useFrameworkReady } from '@/hooks/useFrameworkReady.ts'
-import { useFrameworkReady } from '@/hooks/useFrameworkReady';
+import { useFrameworkReady } from '@/hooks/useFrameworkReady.ts';
 
 // Prevent splash screen from auto-hiding
 SplashScreen.preventAutoHideAsync();
