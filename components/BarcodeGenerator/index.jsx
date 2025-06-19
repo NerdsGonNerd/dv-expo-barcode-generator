@@ -2,13 +2,15 @@ import Svg, { G } from 'react-native-svg';
 import JSBarcode from 'jsbarcode';
 import PropTypes from 'prop-types';
 
-import { Background, BarcodeChunk, BarcodeText } from './components';
+import { Background } from './Background';
+import { BarcodeChunk } from './BarcodeChunk';
+import { BarcodeText } from './BarcodeText';
 import {
   getMaximumHeightOfEncodings,
   getTotalWidthOfEncodings,
   merge,
   calculateEncodingAttributes
-} from './services';
+} from '../../services';
 
 export const Barcode = ({ value, options, rotation }) => {
   const barcode = {};
