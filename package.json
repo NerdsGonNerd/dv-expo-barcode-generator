@@ -29,16 +29,26 @@
   ],
   "main": "index.js",
   "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
     "lint": "eslint \"./**/*.{js,jsx}\" --fix",
     "lint:ci": "eslint \"./**/*.{js,jsx}\"",
     "prepare": "husky",
     "prettier": "prettier --write \"./**/*.{js,jsx,json,md}\""
   },
   "dependencies": {
+    "expo": "~52.0.0",
+    "expo-status-bar": "~2.0.0",
+    "react": "18.3.1",
+    "react-native": "0.76.5",
+    "@react-native-picker/picker": "2.8.1",
     "jsbarcode": "^3.11.6",
     "react-native-svg": "15.8.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.25.2",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
